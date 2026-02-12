@@ -1,2 +1,1 @@
-# EjercicioStream
-Ejercicio Stream de cifrados
+# Ejercicio Stream de cifrados
