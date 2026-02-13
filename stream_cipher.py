@@ -9,6 +9,8 @@ def generateKeystream(size: int, clave: int):
     
     return key
 
+# Referencia de chat para arreglar error básico y mejorar zip:   
+# https://chatgpt.com/share/698e729c-aba0-800f-8104-f5303d1999fb
 def cifrar(mensaje: str, clave: int) -> bytes:
     print(f"Mensaje recibido: {mensaje}")
     mensaje_bytes = mensaje.encode('utf-8')
@@ -22,5 +24,9 @@ def cifrar(mensaje: str, clave: int) -> bytes:
 
     return mensaje_cifrado
 
+def decifrar(mensaje_cifrado: bytes, clave: int) -> str:
+    return
+
 texto = "Tarea cargada"
 cifrar(texto, 15)
+
