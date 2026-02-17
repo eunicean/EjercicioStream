@@ -1,5 +1,6 @@
 import random
 
+# uso del código hecho en clase
 def generateKeystream(size: int, clave: int):
     random.seed(clave)
     key = []
@@ -11,6 +12,7 @@ def generateKeystream(size: int, clave: int):
 
 # Referencia de chat para arreglar error básico y mejorar zip:   
 # https://chatgpt.com/share/698e729c-aba0-800f-8104-f5303d1999fb
+# después le pregunté si el proceso de cifrar es el mismo para descifrar
 def cifrar(mensaje: str, clave: int) -> bytes:
     print(f"Mensaje recibido: {mensaje}")
     mensaje_bytes = mensaje.encode('utf-8')
