@@ -4,6 +4,7 @@ Es este ejercicio se realizó un stream cipher usando operaciones básicas como 
 
 ## Archivos
 - [Stream cipher](stream_cipher.py)
+- [Test dinamico](tests.py)
 
 ## Instalación y uso
 ### **Requisitos**
