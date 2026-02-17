@@ -35,9 +35,9 @@ def decifrar(mensaje_cifrado: bytes, clave: int) -> str:
 
     return mensaje_descifrado
 
-
-clave = 1428
-texto = "Tarea cargada"
-cifrado = cifrar(texto, clave)
-decifrar(cifrado, clave)
+if __name__ == "__main__":
+    clave = 1428
+    texto = "Tarea cargada"
+    cifrado = cifrar(texto, clave)
+    decifrar(cifrado, clave)
 
