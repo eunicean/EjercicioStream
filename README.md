@@ -55,6 +55,9 @@ Desencriptar con diferente mensaje
 ![descifrar con llave diferente al codificar](extras/descifrardiferentes%20llaves.png)
 
 ### **2.2 Reutilización del Keystream**
+Usar el mismo keystream para 2 mensajes puede provocar que se revele información al realizar un XOR con ambos mensajes. Cancelando la llave. 
+![2 mensajes con la misma keystream](extras/mensajesconmismakeystream.png) 
+De ser que el XOR de más de un poco de texto, se puede usar para realizar un analisis de frecuencia y hcaer una decodificación con fuerza bruta.
 
 
 ### **2.3 Longitud del Keystream**
