@@ -25,8 +25,17 @@ def cifrar(mensaje: str, clave: int) -> bytes:
     return mensaje_cifrado
 
 def decifrar(mensaje_cifrado: bytes, clave: int) -> str:
-    return
+    keystream = generateKeystream(len(mensaje_cifrado), clave)
+    print(f"Keystream para desencriptar: {keystream}")
 
+    mensaje_descifrado = bytes([mb ^ ks for mb, ks in zip(mensaje_cifrado, keystream)])
+    print(f"Mensaje desencriptado: {mensaje_descifrado}")
+
+    return mensaje_descifrado
+
+
+clave = 1428
 texto = "Tarea cargada"
-cifrar(texto, 15)
+cifrado = cifrar(texto, clave)
+decifrar(cifrado, clave)
 
